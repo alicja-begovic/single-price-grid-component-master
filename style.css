@@ -1,0 +1,130 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: hsl(218, 22%, 67%);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 40rem;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "intro intro" "wrapp cont";
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.introduction {
+    grid-area: intro;
+    background-color: hsl(204, 43%, 93%);
+    padding: 2.3rem;
+}
+
+.introduction__title {
+    color: hsl(179, 73%, 28%);
+}
+
+.introduction__offer {
+    color: hsl(71, 64%, 43%);
+}
+
+.introduction__description {
+    color: hsl(218, 22%, 67%);
+}
+
+.wrapper {
+    grid-area: wrapp;
+    background-color: hsl(179, 73%, 28%);
+    color: hsl(204, 43%, 93%);
+    padding: 2.3rem;
+}
+
+.wrapper__fontSize .wrapper__fontSize--big {
+    font-size: 30px;
+}
+
+.wrapper__fontSize--color {
+    color: hsl(218, 22%, 67%);
+}
+
+.wrapper__button {
+    background-color: hsl(71, 64%, 43%);
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    display: flex;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.container {
+    grid-area: cont;
+    background-color: hsl(179, 56%, 37%);
+    padding: 2.3rem;
+}
+
+.container__title {
+    color: hsl(204, 43%, 93%);
+}
+
+.container__description {
+    color: hsl(218, 22%, 67%);
+}
+
+@media (max-width: 425px) {
+    body {
+        background-color: hsl(218, 22%, 67%);
+        margin: 0;
+        display: block;
+    }
+    main {
+        display: block;
+        margin: 1.6rem;
+    }
+    .introduction {
+        background-color: hsl(204, 43%, 93%);
+        padding: 1rem;
+    }
+    .introduction__title {
+        color: hsl(179, 73%, 28%);
+    }
+    .introduction__offer {
+        color: hsl(71, 64%, 43%);
+    }
+    .introduction__description {
+        color: hsl(218, 22%, 67%);
+    }
+    .wrapper {
+        background-color: hsl(179, 73%, 28%);
+        color: hsl(204, 43%, 93%);
+        padding: 1rem;
+    }
+    .wrapper__fontSize {
+        
+    }
+    
+    .wrapper__fontSize--big {
+        font-size: 30px;
+    }
+    .wrapper__fontSize--color {
+        color: hsl(218, 22%, 67%);
+    }
+    .wrapper__button {
+        background-color: hsl(71, 64%, 43%);
+    }
+    .container {
+        background-color: hsl(179, 56%, 37%);
+        padding: 1rem;
+    }
+    .container__title {
+        color: hsl(204, 43%, 93%);
+    }
+    .container__description {
+        color: hsl(218, 22%, 67%);
+    }
+}
