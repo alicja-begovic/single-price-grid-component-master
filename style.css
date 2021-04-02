@@ -24,7 +24,7 @@ main {
 .introduction {
     grid-area: intro;
     background-color: hsl(204, 43%, 93%);
-    padding: 2.3rem;
+    padding: 2.8rem;
 }
 
 .introduction__title {
@@ -43,29 +43,36 @@ main {
     grid-area: wrapp;
     background-color: hsl(179, 73%, 28%);
     color: hsl(204, 43%, 93%);
-    padding: 2.3rem;
+    padding: 2.8rem;
+}
+
+.wrapper__fontSize {
+    display: flex;
 }
 
 .wrapper__fontSize .wrapper__fontSize--big {
     font-size: 30px;
+    font-weight: 600;
 }
 
 .wrapper__fontSize--color {
     color: hsl(218, 22%, 67%);
+    padding: 0.5rem;
 }
 
 .wrapper__button {
     background-color: hsl(71, 64%, 43%);
     padding: 0.7rem 3rem 0.7rem 3rem;
+    font-weight: 600;
+    border-radius: 10px;;
     display: flex;
-    border-radius: 10px;
-    align-self: center;
+    justify-content: center;
 }
 
 .container {
     grid-area: cont;
     background-color: hsl(179, 56%, 37%);
-    padding: 2.3rem;
+    padding: 2.8rem;
 }
 
 .container__title {
@@ -106,14 +113,15 @@ main {
     }
     .wrapper__fontSize {
         display: flex;
-        }
+    }
     .wrapper__fontSize--big {
         font-size: 30px;
         font-weight: 600;
     }
     .wrapper__fontSize--color {
         color: hsl(218, 22%, 67%);
-        padding: 0.5rem;;
+        padding: 0.5rem;
+        ;
     }
     .wrapper__button {
         background-color: hsl(71, 64%, 43%);
