@@ -84,7 +84,7 @@ main {
     }
     main {
         display: block;
-        margin: 1.6rem;
+        margin: 2rem;
     }
     .introduction {
         background-color: hsl(204, 43%, 93%);
@@ -105,17 +105,22 @@ main {
         padding: 1rem;
     }
     .wrapper__fontSize {
-        
-    }
-    
+        display: flex;
+        }
     .wrapper__fontSize--big {
         font-size: 30px;
+        font-weight: 600;
     }
     .wrapper__fontSize--color {
         color: hsl(218, 22%, 67%);
+        padding: 0.5rem;;
     }
     .wrapper__button {
         background-color: hsl(71, 64%, 43%);
+        margin-bottom: 1rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
     }
     .container {
         background-color: hsl(179, 56%, 37%);
